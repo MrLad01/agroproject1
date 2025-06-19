@@ -1,8 +1,9 @@
 "use client"
 import React, { useState } from 'react'
 
-const page = () => {
-  const [activeTab, SetActiveTab] = useState("");
+
+export default function Page() {
+  const [activeTab, setActiveTab] = useState<string>("");
   
   return (
     <div className='pt-[140px] pb-18'>
@@ -14,30 +15,30 @@ const page = () => {
               world-class facilities and expert coaching across multiple disciplines.
             </p>
           </div>
-
+  
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-12">
-            <div onClick={() => SetActiveTab("athletic")} className="text-center cursor-pointer hover:scale-110">
+            <div onClick={() => setActiveTab("athletic")} className="text-center cursor-pointer hover:scale-110">
               <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-blue-800 text-2xl font-bold">🏊</span>
               </div>
               <h3 className="text-xl font-bold text-gray-900">Athletics</h3>
               <p className="text-gray-600 text-sm">Olympic-standard training programs</p>
             </div>
-            <div onClick={() => SetActiveTab("football")} className="text-center hover:scale-110 cursor-pointer">
+            <div onClick={() => setActiveTab("football")} className="text-center hover:scale-110 cursor-pointer">
               <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-green-800 text-2xl font-bold">⚽</span>
               </div>
               <h3 className="text-xl font-bold text-gray-900">Football</h3>
               <p className="text-gray-600 text-sm">Professional soccer training programs</p>
             </div>
-            <div onClick={() => SetActiveTab("tennis")} className="text-center hover:scale-110 cursor-pointer">
+            <div onClick={() => setActiveTab("tennis")} className="text-center hover:scale-110 cursor-pointer">
               <div className="bg-red-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-red-800 text-2xl font-bold">🎾</span>
               </div>
               <h3 className="text-xl font-bold text-gray-900">Tennis</h3>
               <p className="text-gray-600 text-sm">Professional tennis instruction on championship courts</p>
             </div>
-            <div onClick={() => SetActiveTab("basketball")} className="text-center hover:scale-110 cursor-pointer">
+            <div onClick={() => setActiveTab("basketball")} className="text-center hover:scale-110 cursor-pointer">
               <div className="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-orange-800 text-2xl font-bold">🏀</span>
               </div>
@@ -64,7 +65,7 @@ const page = () => {
           </div>
             </>
           )}
-
+  
           {activeTab === "football" && (
             <>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-16">
@@ -83,7 +84,7 @@ const page = () => {
           </div>
             </>
           )}
-
+  
           {activeTab === "tennis" && (
             <>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-16">
@@ -102,7 +103,7 @@ const page = () => {
           </div>
             </>
           )}
-
+  
           {activeTab === "basketball" && (
             <>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-16">
@@ -121,7 +122,7 @@ const page = () => {
           </div>
             </>
           )}
-
+  
           <h3 className="text-xl font-bold text-center text-gray-900 mb-2">Training Programs</h3>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-16">
             <div className="bg-blue-100 rounded-2xl h-80 flex items-center justify-center">
@@ -164,7 +165,7 @@ const page = () => {
               </div>
             </div>
           </div>
-
+  
           <h3 className="text-xl font-bold text-center text-gray-900 mb-2">State-of-the-Art Facilities</h3>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
@@ -204,6 +205,5 @@ const page = () => {
         </div>
     </div>
   )
+  
 }
-
-export default page

@@ -25,7 +25,7 @@ export default function Home() {
                 a championship golf course, and an elite sports academy that caters to athletes of all levels.
               </p>
               <p className="text-base text-gray-600 mb-8">
-                Whether you`&apos;`re seeking a peaceful retreat, an exciting golf adventure, or professional sports training, 
+                Whether you&apos;re seeking a peaceful retreat, an exciting golf adventure, or professional sports training, 
                 Agroterra provides the perfect setting for your ultimate getaway. Experience the harmony of luxury, 
                 recreation, and natural beauty in one extraordinary destination.
               </p>
@@ -69,7 +69,7 @@ export default function Home() {
               <p className="text-base text-gray-600 mb-3">
                 Each room is equipped with state-of-the-art technology, premium bedding, spacious bathrooms 
                 with luxury fixtures, and private balconies or patios. Our attention to detail ensures that 
-                your stay is nothing short of extraordinary, whether you`&apos;`re here for business or leisure.
+                your stay is nothing short of extraordinary, whether you&apos;re here for business or leisure.
               </p>
               <ul className="text-base text-gray-600 space-y-1">
                 <li>• Deluxe rooms with garden or mountain views</li>
@@ -253,7 +253,7 @@ export default function Home() {
               </p>
               <p className="text-base text-gray-600 mb-4">
                 We offer both individual and group training sessions, with personalized programs tailored to 
-                each athlete`&apos;`s goals, skill level, and schedule. Our holistic approach includes technical 
+                each athlete&apos;s goals, skill level, and schedule. Our holistic approach includes technical 
                 skill development, physical conditioning, mental preparation, and sports psychology support.
               </p>
               <div className="space-y-4">
@@ -287,7 +287,7 @@ export default function Home() {
               <h3 className="text-xl font-bold text-gray-900 mb-2">State-of-the-Art Facilities</h3>
               <p className="text-base text-gray-600 mb-4">
                 Our sports academy boasts world-class facilities that provide the perfect environment for 
-                athletic development. Every facility is designed with the athlete`&apos;`s needs in mind, featuring 
+                athletic development. Every facility is designed with the athlete&apos;s needs in mind, featuring 
                 the latest equipment and technology to support optimal performance and safety.
               </p>
               <p className="text-base text-gray-600 mb-4">

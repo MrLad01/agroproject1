@@ -136,7 +136,7 @@ const page = () => {
               </p>
               <p className="text-base text-gray-600 mb-4">
                 We offer both individual and group training sessions, with personalized programs tailored to 
-                each athlete`&apos;`s goals, skill level, and schedule. Our holistic approach includes technical 
+                each athlete&apos;s goals, skill level, and schedule. Our holistic approach includes technical 
                 skill development, physical conditioning, mental preparation, and sports psychology support.
               </p>
               <div className="space-y-4">
@@ -170,7 +170,7 @@ const page = () => {
             <div>
               <p className="text-base text-gray-600 mb-4">
                 Our sports academy boasts world-class facilities that provide the perfect environment for 
-                athletic development. Every facility is designed with the athlete`&apos;`s needs in mind, featuring 
+                athletic development. Every facility is designed with the athlete&apos;s needs in mind, featuring 
                 the latest equipment and technology to support optimal performance and safety.
               </p>
               <p className="text-base text-gray-600 mb-4">

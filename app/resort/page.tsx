@@ -22,7 +22,7 @@ const page = () => {
               <p className="text-base text-gray-600 mb-3">
                 Each room is equipped with state-of-the-art technology, premium bedding, spacious bathrooms 
                 with luxury fixtures, and private balconies or patios. Our attention to detail ensures that 
-                your stay is nothing short of extraordinary, whether you`&apos;`re here for business or leisure.
+                your stay is nothing short of extraordinary, whether you&apos;re here for business or leisure.
               </p>
               <ul className="text-base text-gray-600 space-y-1">
                 <li>• Deluxe rooms with garden or mountain views</li>

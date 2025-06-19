@@ -2,9 +2,16 @@
 'use client'
 import { motion, Variants, useInView  } from 'framer-motion';
 import Head from 'next/head'
-// import Image from 'next/image'
+import Image from 'next/image'
 // import Link from 'next/link'
 import { useRef } from 'react';
+
+import resortHeroImage from '@/public/ag1.jpg';
+import accImage from '@/public/ag5.jpg';
+import acc2Image from '@/public/ag7.jpg';
+import acc3Image from '@/public/ag9.jpg';
+import acc4Image from '@/public/ag10.jpg';
+import golfHero from '@/public/ag2.jpg';
 
 
 
@@ -499,14 +506,15 @@ export default function Home() {
                 transition: { duration: 0.3 }
               }}
             >
-              <motion.p 
+              <Image src={resortHeroImage} alt='' className='object-cover w-full h-full rounded-2xl'></Image>
+              {/* <motion.p 
                 className="text-green-800 text-xl font-semibold"
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.6, delay: 1 }}
               >
                 Resort Hero Image
-              </motion.p>
+              </motion.p> */}
             </motion.div>
           </motion.div>
         </motion.div>
@@ -587,7 +595,7 @@ export default function Home() {
               transition: { duration: 0.3 }
             }}
           >
-            <motion.p 
+            {/* <motion.p 
               className="text-blue-800 text-xl font-semibold"
               initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}
@@ -595,7 +603,8 @@ export default function Home() {
               viewport={{ once: true }}
             >
               Resort Rooms Image
-            </motion.p>
+            </motion.p> */}
+             <Image src={accImage} alt='' className='object-cover w-full h-full rounded-2xl'></Image>
           </motion.div>
         </motion.div>
 
@@ -615,7 +624,7 @@ export default function Home() {
               transition: { duration: 0.3 }
             }}
           >
-            <motion.p 
+            {/* <motion.p 
               className="text-amber-800 text-xl font-semibold"
               initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}
@@ -623,7 +632,8 @@ export default function Home() {
               viewport={{ once: true }}
             >
               Resort Amenities Image
-            </motion.p>
+            </motion.p> */}
+            <Image src={acc2Image} alt='' className='object-cover w-full h-full rounded-2xl'></Image>
           </motion.div>
           <motion.div 
             className="order-1 lg:order-2"
@@ -883,7 +893,7 @@ export default function Home() {
                 transition: { duration: 0.3 }
               }}
             >
-              <motion.p 
+              {/* <motion.p 
                 className="text-green-800 text-xl font-semibold"
                 initial={{ opacity: 0, scale: 0.8 }}
                 whileInView={{ opacity: 1, scale: 1 }}
@@ -891,7 +901,8 @@ export default function Home() {
                 viewport={{ once: true }}
               >
                 Golf Course Image
-              </motion.p>
+              </motion.p> */}
+                <Image src={golfHero} alt='' className='object-cover w-full h-full rounded-2xl'></Image>
             </motion.div>
           </motion.div>
         </div>
@@ -988,14 +999,15 @@ export default function Home() {
               transition: { duration: 0.3, ease: "easeInOut" }
             }}
           >
-            <motion.p
+            {/* <motion.p
               className="text-blue-800 text-xl font-semibold"
               initial={{ opacity: 0.7 }}
               whileHover={{ opacity: 1 }}
               transition={{ duration: 0.3 }}
             >
               Sports Facilities Image
-            </motion.p>
+            </motion.p> */}
+              <Image src={acc3Image} alt='' className='object-cover w-full h-full rounded-2xl'></Image>
           </motion.div>
           
           <motion.div variants={fadeUpMotion}>
@@ -1153,14 +1165,15 @@ export default function Home() {
               transition: { duration: 0.3, ease: "easeInOut" }
             }}
           >
-            <motion.p
+            {/* <motion.p
               className="text-red-800 text-xl font-semibold"
               initial={{ opacity: 0.7 }}
               whileHover={{ opacity: 1 }}
               transition={{ duration: 0.3 }}
             >
               Academy Facilities Image
-            </motion.p>
+            </motion.p> */}
+              <Image src={acc4Image} alt='' className='object-cover w-full h-full rounded-2xl'></Image>
           </motion.div>
         </motion.div>
       </div>

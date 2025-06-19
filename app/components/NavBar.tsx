@@ -152,20 +152,20 @@ export default function NavBar() {
           variants={logoVariants}
           whileHover="hover"
         >
-          <h1 className="font-bold text-green-800 italic cursor-pointer">Agroterra logo</h1>
+          <h1 className="font-bold text-green-800 italic cursor-pointer">Agroterra</h1>
         </motion.div>
         <motion.div 
-          className='flex items-center gap-2 text-xs'
+          className='flex max-sm:gap-0 max-sm:flex-col max-sm:items-end outline-0 items-center gap-2 text-xs'
           variants={contactInfoVariants}
         >
           <motion.div variants={contactItemVariants} whileHover="hover">
             <Link href="">Joga-Orile, Iboro/Joga 110123, Ogun State</Link>
           </motion.div>
-          <motion.p variants={contactItemVariants}>|</motion.p>
+          <motion.p variants={contactItemVariants} className='max-sm:hidden'>|</motion.p>
           <motion.div variants={contactItemVariants} whileHover="hover">
             <Link href="">34XC+58 Alade, Nigeria</Link>
           </motion.div>
-          <motion.p variants={contactItemVariants}>|</motion.p>
+          <motion.p variants={contactItemVariants} className='max-sm:hidden'>|</motion.p>
           <motion.div variants={contactItemVariants} whileHover="hover">
             <Link href="">(+234) 803 319 4444</Link>
           </motion.div>

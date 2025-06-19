@@ -420,40 +420,98 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <section id="home" className="pt-[52px] bg-gradient-to-br from-green-50 to-blue-50 min-h-screen flex items-center">
-        <div className="lg:max-w-6xl xl:max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h1 className="text-3xl lg:text-5xl font-bold text-gray-900 mb-6">
-                Welcome to <br /><span className="text-green-800">Agroterra</span> Resort
-              </h1>
-              <p className="text-base text-gray-600 mb-3 leading-relaxed">
-                Nestled in the heart of pristine countryside, Agroterra Resort offers an unparalleled luxury experience 
-                where nature meets sophistication. Our world-class facilities include premium accommodations, 
-                a championship golf course, and an elite sports academy that caters to athletes of all levels.
-              </p>
-              <p className="text-base text-gray-600 mb-8">
-                Whether you&apos;re seeking a peaceful retreat, an exciting golf adventure, or professional sports training, 
-                Agroterra provides the perfect setting for your ultimate getaway. Experience the harmony of luxury, 
-                recreation, and natural beauty in one extraordinary destination.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <button className="bg-green-800 text-white px-8 py-4 rounded-lg text-sm font-semibold hover:bg-green-700 transition-colors">
-                  Explore Our Resort
-                </button>
-                <button className="border-2 border-green-800 text-green-800 px-8 py-4 rounded-lg text-sm font-semibold hover:bg-green-800 hover:text-white transition-colors">
-                  View Packages
-                </button>
-              </div>
-            </div>
-            <div className="relative">
-              <div className="bg-green-200 rounded-2xl h-96 flex items-center justify-center">
-                <p className="text-green-800 text-xl font-semibold">Resort Hero Image</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+        <section id="home" className="pt-[52px] bg-gradient-to-br from-green-50 to-blue-50 min-h-screen flex items-center">
+      <div className="lg:max-w-6xl xl:max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <motion.div 
+          className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible"
+          viewport={{ once: true, amount: 0.3 }}
+        >
+          <motion.div variants={textVariants}>
+            <motion.h1 
+              className="text-3xl lg:text-5xl font-bold text-gray-900 mb-6"
+              variants={textVariants}
+            >
+              Welcome to <br />
+              <motion.span 
+                className="text-green-800"
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.8, delay: 0.5, ease: [0.6, -0.05, 0.01, 0.99] }}
+              >
+                Agroterra
+              </motion.span> Resort
+            </motion.h1>
+            
+            <motion.p 
+              className="text-base text-gray-600 mb-3 leading-relaxed"
+              variants={textVariants}
+            >
+              Nestled in the heart of pristine countryside, Agroterra Resort offers an unparalleled luxury experience 
+              where nature meets sophistication. Our world-class facilities include premium accommodations, 
+              a championship golf course, and an elite sports academy that caters to athletes of all levels.
+            </motion.p>
+            
+            <motion.p 
+              className="text-base text-gray-600 mb-8"
+              variants={textVariants}
+            >
+              Whether you're seeking a peaceful retreat, an exciting golf adventure, or professional sports training, 
+              Agroterra provides the perfect setting for your ultimate getaway. Experience the harmony of luxury, 
+              recreation, and natural beauty in one extraordinary destination.
+            </motion.p>
+            
+            <motion.div 
+              className="flex flex-col sm:flex-row gap-4"
+              variants={buttonContainerVariants}
+            >
+              <motion.button 
+                className="bg-green-800 text-white px-8 py-4 rounded-lg text-sm font-semibold hover:bg-green-700 transition-colors"
+                variants={buttonVariants}
+                whileHover="hover"
+                whileTap="tap"
+              >
+                Explore Our Resort
+              </motion.button>
+              <motion.button 
+                className="border-2 border-green-800 text-green-800 px-8 py-4 rounded-lg text-sm font-semibold hover:bg-green-800 hover:text-white transition-colors"
+                variants={buttonVariants}
+                whileHover="hover"
+                whileTap="tap"
+              >
+                View Packages
+              </motion.button>
+            </motion.div>
+          </motion.div>
+          
+          <motion.div 
+            className="relative"
+            variants={imageVariants}
+          >
+            <motion.div 
+              className="bg-green-200 rounded-2xl h-96 flex items-center justify-center"
+              variants={floatingVariants}
+              animate="animate"
+              whileHover={{ 
+                scale: 1.02,
+                transition: { duration: 0.3 }
+              }}
+            >
+              <motion.p 
+                className="text-green-800 text-xl font-semibold"
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.6, delay: 1 }}
+              >
+                Resort Hero Image
+              </motion.p>
+            </motion.div>
+          </motion.div>
+        </motion.div>
+      </div>
+    </section>
 
       {/* Resort Section */}
         <section id="resort" className="py-[52px] bg-white">

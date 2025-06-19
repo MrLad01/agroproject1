@@ -159,7 +159,7 @@ export default function NavBar() {
           variants={contactInfoVariants}
         >
           <motion.div variants={contactItemVariants} whileHover="hover">
-            <Link href="">Joga-Orile, Iboro/Joga 110123, Ogun State</Link>
+            <Link href="https://www.google.com/maps/place/Agroterra+Farm+Resort/@7.0972934,3.1209846,15z/data=!4m6!3m5!1s0x103a55f97786c3cb:0x5dca0bc8e4d4de1!8m2!3d7.0979033!4d3.1207854!16s%2Fg%2F11hjxgkkzr?entry=ttu&g_ep=EgoyMDI1MDYxNi4wIKXMDSoASAFQAw%3D%3D" target='_blank'>Joga-Orile, Iboro/Joga 110123, Ogun State</Link>
           </motion.div>
           <motion.p variants={contactItemVariants} className='max-sm:hidden'>|</motion.p>
           <motion.div variants={contactItemVariants} whileHover="hover">

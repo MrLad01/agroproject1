@@ -1,4 +1,8 @@
 import React from 'react'
+import Image from 'next/image';
+
+import accImage from '@/public/ag5.jpg';
+import acc2Image from '@/public/ag11.jpeg';
 
 const page = () => {
   return (
@@ -32,14 +36,17 @@ const page = () => {
               </ul>
             </div>
             <div className="bg-blue-100 rounded-2xl h-80 flex items-center justify-center">
-              <p className="text-blue-800 text-xl font-semibold">Resort Rooms Image</p>
+              <Image src={accImage} alt='' className='object-cover w-full h-full rounded-2xl'></Image>
+              {/* <p className="text-blue-800 text-xl font-semibold">Resort Rooms Image</p> */}
             </div>
           </div>
 
         <h3 className="text-xl text-center font-bold text-gray-900 mb-4">World-Class Amenities</h3>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="bg-amber-100 rounded-2xl h-80 flex items-center justify-center order-2 lg:order-1">
-              <p className="text-amber-800 text-xl font-semibold">Resort Amenities Image</p>
+              {/* <p className="text-amber-800 text-xl font-semibold">Resort Amenities Image</p>
+               */}
+              <Image src={acc2Image} alt='' className='object-cover w-full h-full rounded-2xl'></Image>
             </div>
             <div className="order-1 lg:order-2">
               <p className="text-base text-gray-600 mb-3">

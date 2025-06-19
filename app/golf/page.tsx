@@ -1,5 +1,8 @@
 import React from 'react'
 
+import golfHero from '@/public/ag2.jpg';
+import Image from 'next/image';
+
 const page = () => {
   return (
     <div className='pt-[140px] pb-18'>
@@ -71,7 +74,9 @@ const page = () => {
               </div>
             </div>
             <div className="bg-green-200 rounded-2xl h-96 flex items-center justify-center">
-              <p className="text-green-800 text-xl font-semibold">Golf Course Image</p>
+              {/* <p className="text-green-800 text-xl font-semibold">Golf Course Image</p>
+               */}
+              <Image src={golfHero} alt='' className='object-cover w-full h-full rounded-2xl'></Image>
             </div>
           </div>
         </div>

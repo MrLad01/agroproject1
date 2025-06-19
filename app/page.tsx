@@ -458,7 +458,7 @@ export default function Home() {
               className="text-base text-gray-600 mb-8"
               variants={textVariants}
             >
-              Whether you're seeking a peaceful retreat, an exciting golf adventure, or professional sports training, 
+              Whether you&apos;re seeking a peaceful retreat, an exciting golf adventure, or professional sports training, 
               Agroterra provides the perfect setting for your ultimate getaway. Experience the harmony of luxury, 
               recreation, and natural beauty in one extraordinary destination.
             </motion.p>
@@ -566,7 +566,7 @@ export default function Home() {
             >
               Each room is equipped with state-of-the-art technology, premium bedding, spacious bathrooms 
               with luxury fixtures, and private balconies or patios. Our attention to detail ensures that 
-              your stay is nothing short of extraordinary, whether you're here for business or leisure.
+              your stay is nothing short of extraordinary, whether you&apos;re here for business or leisure.
             </motion.p>
             <motion.ul 
               className="text-base text-gray-600 space-y-1"
@@ -930,7 +930,7 @@ export default function Home() {
           animate={isInView ? "animate" : "initial"}
           variants={staggerContainer}
         >
-          {sports.map((sport, index) => (
+          {sports.map((sport) => (
             <motion.div
               key={sport.title}
               className="text-center group cursor-pointer"
@@ -1027,7 +1027,7 @@ export default function Home() {
               className="space-y-4"
               variants={staggerContainer}
             >
-              {programs.map((program, index) => (
+              {programs.map((program) => (
                 <motion.div
                   key={program.title}
                   className="flex items-start group"
@@ -1110,7 +1110,7 @@ export default function Home() {
                 variants={staggerContainer}
               >
                 <motion.ul className="space-y-2" variants={staggerContainer}>
-                  {facilities.slice(0, 4).map((facility, index) => (
+                  {facilities.slice(0, 4).map((facility) => (
                     <motion.li
                       key={facility}
                       variants={slideInLeft}
@@ -1126,7 +1126,7 @@ export default function Home() {
                   ))}
                 </motion.ul>
                 <motion.ul className="space-y-2" variants={staggerContainer}>
-                  {facilities.slice(4).map((facility, index) => (
+                  {facilities.slice(4).map((facility) => (
                     <motion.li
                       key={facility}
                       variants={slideInLeft}

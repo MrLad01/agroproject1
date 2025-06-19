@@ -10,7 +10,7 @@ const page = () => {
           <div className="text-center mb-10">
             <h2 className="text-3xl font-bold text-gray-900 mb-1">Agroterra Golf Course</h2>
             <p className="text-base text-gray-600 max-w-3xl mx-auto">
-              Experience golf at its finest on our meticulously designed 18-hole championship course, 
+              Experience golf at its finest on our meticulously designed 9-hole championship course, 
               where strategic play meets stunning natural beauty.
             </p>
           </div>
@@ -18,11 +18,11 @@ const page = () => {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
             <div className="bg-white rounded-2xl p-6 shadow-lg hover:scale-110">
               <div className="bg-green-100 w-12 h-12 rounded-full flex items-center justify-center mb-2">
-                <span className="text-green-800 text-xl font-bold">18</span>
+                <span className="text-green-800 text-xl font-bold">9</span>
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-2">Championship Holes</h3>
               <p className="text-gray-600 text-sm">
-                Our 18-hole championship course offers a challenging yet enjoyable experience for golfers 
+                Our 9-hole championship course offers a challenging yet enjoyable experience for golfers 
                 of all skill levels, featuring strategic bunkers, water hazards, and undulating greens.
               </p>
             </div>
@@ -66,7 +66,7 @@ const page = () => {
               <div className="bg-green-100 p-4 rounded-lg">
                 <h4 className="font-bold text-green-800 mb-2">Course Statistics</h4>
                 <div className="grid grid-cols-2 gap-1 text-sm">
-                  <div>Par: 72 | Yardage: 7,200</div>
+                  <div>Par: 70 | Yardage: 7,200</div>
                   <div>Slope Rating: 142</div>
                   <div>Course Rating: 74.5</div>
                   <div>Designed by: Robert Trent Jones Jr.</div>

@@ -1207,7 +1207,7 @@ export default function Home() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-sm text-gray-900">Address</h4>
-                  <p className="text-gray-600 text-sm">1234 Resort Boulevard<br />Countryside Valley, State 12345</p>
+                  <p className="text-gray-600 text-sm">Joga-Orile,<br />Iboro/Joga 110123, Ogun State</p>
                 </div>
               </motion.div>
               <motion.div 
@@ -1220,7 +1220,7 @@ export default function Home() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900 text-sm">Phone</h4>
-                  <p className="text-gray-600 text-sm">+1 (555) 123-4567</p>
+                  <p className="text-gray-600 text-sm">(+234) 803 319 4444</p>
                 </div>
               </motion.div>
               <motion.div 

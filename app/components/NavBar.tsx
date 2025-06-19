@@ -159,15 +159,15 @@ export default function NavBar() {
           variants={contactInfoVariants}
         >
           <motion.div variants={contactItemVariants} whileHover="hover">
-            <Link href="">1234 Resort Boulevard, Countryside Valley, State</Link>
+            <Link href="">Joga-Orile, Iboro/Joga 110123, Ogun State</Link>
           </motion.div>
           <motion.p variants={contactItemVariants}>|</motion.p>
           <motion.div variants={contactItemVariants} whileHover="hover">
-            <Link href="">info@agroterraresort.com</Link>
+            <Link href="">34XC+58 Alade, Nigeria</Link>
           </motion.div>
           <motion.p variants={contactItemVariants}>|</motion.p>
           <motion.div variants={contactItemVariants} whileHover="hover">
-            <Link href="">+23412345678</Link>
+            <Link href="">(+234) 803 319 4444</Link>
           </motion.div>
         </motion.div>
       </motion.div>

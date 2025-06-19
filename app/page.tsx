@@ -407,13 +407,12 @@ export default function Home() {
   ];
 
   const facilities = [
-    '8 Professional tennis courts',
-    'Olympic-size swimming pool',
+    '2 Professional tennis courts',
     'Full-size basketball courts',
-    'Soccer fields with FIFA-approved turf',
-    'Strength and conditioning center',
+    'Standard Soccer field',
+    'Gym',
     'Sports medicine clinic',
-    'Video analysis rooms',
+    'Squash Hall',
     'Athlete lounge and study areas'
   ];
 
@@ -722,7 +721,7 @@ export default function Home() {
               className="text-base text-gray-600 max-w-3xl mx-auto"
               variants={headerVariants}
             >
-              Experience golf at its finest on our meticulously designed 18-hole championship course, 
+              Experience golf at its finest on our meticulously designed 9-hole championship course, 
               where strategic play meets stunning natural beauty.
             </motion.p>
           </motion.div>
@@ -748,7 +747,7 @@ export default function Home() {
                   className="text-green-800 text-xl font-bold"
                   variants={iconVariants}
                 >
-                  18
+                  9
                 </motion.span>
               </motion.div>
               <motion.h3 
@@ -761,7 +760,7 @@ export default function Home() {
                 className="text-gray-600 text-sm"
                 variants={textVariants}
               >
-                Our 18-hole championship course offers a challenging yet enjoyable experience for golfers 
+                Our 9-hole championship course offers a challenging yet enjoyable experience for golfers 
                 of all skill levels, featuring strategic bunkers, water hazards, and undulating greens.
               </motion.p>
             </motion.div>
@@ -877,7 +876,7 @@ export default function Home() {
                   className="grid grid-cols-2 gap-1 text-sm"
                   variants={sectionVariants}
                 >
-                  <motion.div variants={listItemVariants}>Par: 72 | Yardage: 7,200</motion.div>
+                  <motion.div variants={listItemVariants}>Par: 70 | Yardage: 7,200</motion.div>
                   <motion.div variants={listItemVariants}>Slope Rating: 142</motion.div>
                   <motion.div variants={listItemVariants}>Course Rating: 74.5</motion.div>
                   <motion.div variants={listItemVariants}>Designed by: Robert Trent Jones Jr.</motion.div>
